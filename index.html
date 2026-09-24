@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Xinya Li — Data Scientist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">XL</a>
+    <div class="nav-links">
+      <a href="#about"   class="nav-link" data-i18n="nav.about">About</a>
+      <a href="#experience" class="nav-link" data-i18n="nav.exp">Experience</a>
+      <a href="#education"  class="nav-link" data-i18n="nav.edu">Education</a>
+      <a href="#skills"     class="nav-link" data-i18n="nav.skills">Skills</a>
+      <a href="#publications" class="nav-link" data-i18n="nav.pub">Publications</a>
+      <a href="#travel"     class="nav-link" data-i18n="nav.travel">Travel</a>
+      <a href="#life"       class="nav-link" data-i18n="nav.life">Life</a>
+      <a href="#contact"    class="nav-link" data-i18n="nav.contact">Contact</a>
+    </div>
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+      <button class="lang-btn" data-lang="ja">日</button>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about"        class="mob-link" data-i18n="nav.about">About</a>
+    <a href="#experience"   class="mob-link" data-i18n="nav.exp">Experience</a>
+    <a href="#education"    class="mob-link" data-i18n="nav.edu">Education</a>
+    <a href="#skills"       class="mob-link" data-i18n="nav.skills">Skills</a>
+    <a href="#publications" class="mob-link" data-i18n="nav.pub">Publications</a>
+    <a href="#travel"       class="mob-link" data-i18n="nav.travel">Travel</a>
+    <a href="#life"         class="mob-link" data-i18n="nav.life">Life</a>
+    <a href="#contact"      class="mob-link" data-i18n="nav.contact">Contact</a>
+    <div class="mob-lang">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="fr">FR</button>
+      <button class="lang-btn" data-lang="zh">中</button>
+      <button class="lang-btn" data-lang="ja">日</button>
+    </div>
+  </div>
+</nav>
+
+<!-- ── Hero ───────────────────────────────────────────────── -->
+<section id="hero">
+  <div class="hero-content">
+    <p class="hero-tag" data-i18n="hero.tag">Data Scientist · Geneva</p>
+    <h1 class="hero-name">Xinya Li</h1>
+    <h2 class="hero-sub" data-i18n="hero.sub">Business Analytics &amp; Statistics</h2>
+    <p class="hero-desc" data-i18n="hero.desc">
+      Turning complex data into strategic decisions — across borders, industries, and languages.
+    </p>
+    <div class="hero-badges">
+      <span class="badge" data-i18n="badge.cn">🇨🇳 Native Chinese</span>
+      <span class="badge" data-i18n="badge.en">🇬🇧 English C1</span>
+      <span class="badge" data-i18n="badge.jp">🇯🇵 Japanese N1</span>
+      <span class="badge" data-i18n="badge.fr">🇫🇷 French B1</span>
+    </div>
+    <div class="hero-ctas">
+      <a href="assets/Xinya_Li_CV.pdf" download class="btn btn-primary" data-i18n="hero.cv">Download CV</a>
+      <a href="#contact" class="btn btn-ghost" data-i18n="hero.contact">Get in Touch</a>
+    </div>
+    <div class="hero-avail" data-i18n="hero.avail">
+      Available for full-time roles from July 2026
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-photo-wrap">
+      <img src="assets/profile.jpg" alt="Xinya Li" class="hero-photo" />
+    </div>
+    <div class="hero-stat-card card-1">
+      <span class="stat-num">4</span>
+      <span class="stat-label" data-i18n="stat.lang">Languages</span>
+    </div>
+    <div class="hero-stat-card card-2">
+      <span class="stat-num">#1</span>
+      <span class="stat-label" data-i18n="stat.kaggle">Kaggle Competition</span>
+    </div>
+    <div class="hero-stat-card card-3">
+      <span class="stat-num">2</span>
+      <span class="stat-label" data-i18n="stat.pub">Publications</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── About ──────────────────────────────────────────────── -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.about">About</div>
+    <h2 class="section-title" data-i18n="about.title">Who I Am</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p data-i18n="about.p1">
+          I am a Master's student in Business Analytics &amp; Statistics at the University of Geneva, currently working as a data science intern at Givaudan. My career bridges analytical rigour with cross-cultural communication — from optimising cobot behaviour in a production environment to building web applications used in perfumery education.
+        </p>
+        <p data-i18n="about.p2">
+          Having lived and studied in China, Japan, Sweden, and Switzerland, I bring a genuinely international perspective to every project. I thrive in environments where data, people, and strategy intersect — and where clear communication is as important as technical precision.
+        </p>
+        <p data-i18n="about.p3">
+          My strengths are curiosity, adaptability, and the ability to translate technical findings into actionable insights for non-technical stakeholders.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <span class="highlight-icon">📊</span>
+            <div>
+              <strong data-i18n="about.h1t">Data-Driven</strong>
+              <p data-i18n="about.h1d">Statistical modelling, ML pipelines, visualisation</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">🌏</span>
+            <div>
+              <strong data-i18n="about.h2t">Cross-Cultural</strong>
+              <p data-i18n="about.h2d">China · Japan · Sweden · Switzerland</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <span class="highlight-icon">⚡</span>
+            <div>
+              <strong data-i18n="about.h3t">Agile &amp; Collaborative</strong>
+              <p data-i18n="about.h3d">Scrum, sprint planning, stakeholder communication</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="kpi-card">
+          <div class="kpi-num">3+</div>
+          <div class="kpi-label" data-i18n="kpi.countries">Countries of study &amp; work</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">5.86</div>
+          <div class="kpi-label" data-i18n="kpi.gpa">GPA / 6.0 — Hokkaido University</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">20+</div>
+          <div class="kpi-label" data-i18n="kpi.bugs">Bugs resolved in production webapp</div>
+        </div>
+        <div class="kpi-card">
+          <div class="kpi-num">18+</div>
+          <div class="kpi-label" data-i18n="kpi.params">Cobot parameters optimised</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Experience ─────────────────────────────────────────── -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.exp">Experience</div>
+    <h2 class="section-title" data-i18n="exp.title">Professional Experience</h2>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.g1.role">Data Science Intern — Robot Behaviour Optimisation</h3>
+              <p class="tl-company">Givaudan · Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.g1.date">Dec 2025 – Present</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp.g1.b1">Independently managed data-driven parameter optimisation for an automated liquid pouring cobot before industrialisation — targeting &lt;0.5 g accuracy.</li>
+            <li data-i18n="exp.g1.b2">Analysed pouring test data and visualised flow-rate patterns to understand parameter impact across bottle types, target volumes, and liquid properties.</li>
+            <li data-i18n="exp.g1.b3">Identified behavioural clusters and grouped raw materials to support more effective parameter selection strategies.</li>
+            <li data-i18n="exp.g1.b4">Refined combinations of 18–20 interacting parameters in a complex system with no direct access to the underlying control algorithm.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Python</span><span class="tag">Data Visualisation</span><span class="tag">Parameter Optimisation</span><span class="tag">Cobot</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.g2.role">Data Science Intern — Score Webapp Development</h3>
+              <p class="tl-company">Givaudan · Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.g2.date">Sep – Dec 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp.g2.b1">Contributed to agile development of an internal web app for Givaudan's perfumery school — supporting teachers and students in tracking learning progress.</li>
+            <li data-i18n="exp.g2.b2">Resolved 20+ functional and UI bugs across front-end, back-end, and workflow components.</li>
+            <li data-i18n="exp.g2.b3">Translated feedback from bi-weekly sprint meetings into actionable product updates, bridging non-technical users and the development team.</li>
+            <li data-i18n="exp.g2.b4">Enhanced progress tracking, assessment display logic, and exam request features to align with user needs.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">Agile / Scrum</span><span class="tag">Full-Stack</span><span class="tag">Jira</span><span class="tag">UX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.kg.role">Team Leader — ML Competition (Kaggle, 1st Place)</h3>
+              <p class="tl-company" data-i18n="exp.kg.company">University of Geneva · Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.kg.date">Oct – Dec 2024</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp.kg.b1">Led team to 1st place in the Bike Sharing Kaggle competition.</li>
+            <li data-i18n="exp.kg.b2">Applied feature engineering: one-hot encoding, feature selection, 50% time-series split.</li>
+            <li data-i18n="exp.kg.b3">Tuned advanced ML models (Decision Tree, SVM, Random Forest, CatBoost, LSTM) using Optuna; CatBoost achieved best performance.</li>
+          </ul>
+          <div class="tl-tags">
+            <span class="tag">CatBoost</span><span class="tag">Optuna</span><span class="tag">Time Series</span><span class="tag">Python</span><span class="tag">Team Lead</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.etl.role">ETL Pipeline Project</h3>
+              <p class="tl-company" data-i18n="exp.etl.company">Academic Project · University of Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.etl.date">2024 – 2025</span>
+          </div>
+          <p class="tl-paragraph" data-i18n="exp.etl.body">
+            Designed and implemented an end-to-end ETL pipeline — from raw source extraction through transformation logic to a clean, query-ready data layer — and documented the workflow for reproducibility.
+          </p>
+          <div class="tl-tags">
+            <span class="tag">ETL</span><span class="tag">SQL</span><span class="tag">Python</span><span class="tag">Data Pipeline</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.pbi.role">Power BI Dashboard Project</h3>
+              <p class="tl-company" data-i18n="exp.pbi.company">Academic Project · University of Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.pbi.date">2024 – 2025</span>
+          </div>
+          <p class="tl-paragraph" data-i18n="exp.pbi.body">
+            Built an interactive Power BI dashboard turning business data into a clear narrative for decision-makers — DAX measures, drill-through views, and a focus on a single-glance executive summary.
+          </p>
+          <div class="tl-tags">
+            <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Business Intelligence</span><span class="tag">Storytelling</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.aie.role">Sales Staff — Incoming Exchange Department</h3>
+              <p class="tl-company">AIESEC Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.aie.date">Mar – Sep 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp.aie.b1">Provided talent pool services connecting international exchange participants with Geneva-based companies.</li>
+          </ul>
+          <div class="tl-tags"><span class="tag">B2B Sales</span><span class="tag">International</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-header">
+            <div>
+              <h3 class="tl-role" data-i18n="exp.ifsa.role">Research Department — CRM &amp; Sector Relations</h3>
+              <p class="tl-company">IFSA Geneva</p>
+            </div>
+            <span class="tl-date" data-i18n="exp.ifsa.date">Sep 2024 – Mar 2025</span>
+          </div>
+          <ul class="tl-bullets">
+            <li data-i18n="exp.ifsa.b1">Managed CRM connections with Geneva's Private Banking, Blockchain &amp; Tech, and Markets sectors.</li>
+          </ul>
+          <div class="tl-tags"><span class="tag">CRM</span><span class="tag">Finance</span><span class="tag">Blockchain</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Education ──────────────────────────────────────────── -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.edu">Education</div>
+    <h2 class="section-title" data-i18n="edu.title">Academic Journey</h2>
+    <div class="edu-grid">
+
+      <div class="edu-card reveal">
+        <div class="edu-year">2024 – 2027</div>
+        <div class="edu-logo-wrap unige"></div>
+        <h3 class="edu-degree" data-i18n="edu.unige.deg">MSc Business Analytics &amp; Statistics</h3>
+        <p class="edu-school">University of Geneva</p>
+        <p class="edu-location">🇨🇭 Geneva, Switzerland</p>
+        <p class="edu-gpa">GPA 5.0 / 6.0</p>
+        <p class="edu-dept" data-i18n="edu.unige.dept">Department of Economics &amp; Business</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-year">2022 – 2024</div>
+        <div class="edu-logo-wrap hokkaido"></div>
+        <h3 class="edu-degree" data-i18n="edu.hok.deg">MSc Statistics</h3>
+        <p class="edu-school">Hokkaido University</p>
+        <p class="edu-location">🇯🇵 Sapporo, Japan</p>
+        <p class="edu-gpa">GPA 5.86 / 6.0</p>
+        <p class="edu-dept" data-i18n="edu.hok.dept">Graduate School of Economics &amp; Business</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-year">Jan – Jun 2023</div>
+        <div class="edu-logo-wrap kth"></div>
+        <h3 class="edu-degree" data-i18n="edu.kth.deg">Exchange — MSc Statistics</h3>
+        <p class="edu-school">KTH Royal Institute of Technology</p>
+        <p class="edu-location">🇸🇪 Stockholm, Sweden</p>
+        <p class="edu-dept" data-i18n="edu.kth.dept">School of Engineering Sciences</p>
+      </div>
+
+      <div class="edu-card reveal">
+        <div class="edu-year">2015 – 2019</div>
+        <div class="edu-logo-wrap wuhan"></div>
+        <h3 class="edu-degree" data-i18n="edu.whu.deg">BSc Logistics Management</h3>
+        <p class="edu-school">Wuhan Business University</p>
+        <p class="edu-location">🇨🇳 Wuhan, China</p>
+        <p class="edu-gpa">GPA 3.69 / 5.0 · Top 10% Graduate</p>
+      </div>
+
+    </div>
+
+    <div class="nitobe-banner reveal">
+      <span class="nitobe-icon">🏅</span>
+      <div>
+        <strong data-i18n="edu.nitobe.title">Nitobe Honor Program</strong>
+        <p data-i18n="edu.nitobe.desc">Selective leadership program at Hokkaido University for globally-minded scholars · May 2022 – Feb 2023</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Skills ─────────────────────────────────────────────── -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.skills">Skills</div>
+    <h2 class="section-title" data-i18n="skills.title">Technical Toolkit</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group reveal">
+        <h3 class="skill-cat" data-i18n="sk.prog">Programming</h3>
+        <div class="skill-bars">
+          <div class="skill-row"><span>Python</span><div class="bar"><div class="bar-fill" style="--w:92%"></div></div></div>
+          <div class="skill-row"><span>R</span><div class="bar"><div class="bar-fill" style="--w:82%"></div></div></div>
+          <div class="skill-row"><span>SQL</span><div class="bar"><div class="bar-fill" style="--w:80%"></div></div></div>
+          <div class="skill-row"><span>Bash / Git</span><div class="bar"><div class="bar-fill" style="--w:70%"></div></div></div>
+          <div class="skill-row"><span>LaTeX</span><div class="bar"><div class="bar-fill" style="--w:72%"></div></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-cat" data-i18n="sk.ml">Machine Learning &amp; Statistics</h3>
+        <div class="skill-pills">
+          <span class="pill">Scikit-learn</span>
+          <span class="pill">CatBoost / XGBoost</span>
+          <span class="pill">LSTM / Deep Learning</span>
+          <span class="pill">Optuna</span>
+          <span class="pill">Statistical Modelling</span>
+          <span class="pill">Time Series</span>
+          <span class="pill">Feature Engineering</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-cat" data-i18n="sk.vis">Analytics &amp; Visualisation</h3>
+        <div class="skill-pills">
+          <span class="pill">Power BI</span>
+          <span class="pill">Tableau</span>
+          <span class="pill">Matplotlib</span>
+          <span class="pill">Seaborn</span>
+          <span class="pill">Plotly / Dash</span>
+          <span class="pill">R Markdown</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-cat" data-i18n="sk.tools">Platforms &amp; Tools</h3>
+        <div class="skill-pills">
+          <span class="pill">Dataiku</span>
+          <span class="pill">Jira / Confluence</span>
+          <span class="pill">Kanban / Scrum</span>
+          <span class="pill">GitHub</span>
+          <span class="pill">Power BI</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal lang-group">
+        <h3 class="skill-cat" data-i18n="sk.lang">Languages</h3>
+        <div class="lang-cards">
+          <div class="lang-card">
+            <span class="lang-flag">🇨🇳</span>
+            <span class="lang-name" data-i18n="lang.cn">Chinese</span>
+            <span class="lang-level native" data-i18n="lang.native">Native</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-flag">🇬🇧</span>
+            <span class="lang-name" data-i18n="lang.en">English</span>
+            <span class="lang-level c1">C1 · TOEFL 96</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-flag">🇯🇵</span>
+            <span class="lang-name" data-i18n="lang.jp">Japanese</span>
+            <span class="lang-level b2">B2 · JLPT N1</span>
+          </div>
+          <div class="lang-card">
+            <span class="lang-flag">🇫🇷</span>
+            <span class="lang-name" data-i18n="lang.fr">French</span>
+            <span class="lang-level b1">B1</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 class="skill-cat" data-i18n="sk.cert">Certifications</h3>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-icon">🎓</span>
+            <div>
+              <strong>Dataiku Core Designer</strong>
+              <p>Dataiku</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">🎓</span>
+            <div>
+              <strong>ML Practitioner Certificate</strong>
+              <p>Dataiku</p>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-icon">🎓</span>
+            <div>
+              <strong data-i18n="cert.sql">Associate Data Analyst in SQL</strong>
+              <p>DataCamp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Publications ───────────────────────────────────────── -->
+<section id="publications" class="section">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.pub">Publications</div>
+    <h2 class="section-title" data-i18n="pub.title">Research &amp; Publications</h2>
+    <div class="pub-grid">
+
+      <div class="pub-card reveal">
+        <div class="pub-year">2023</div>
+        <h3 class="pub-title" data-i18n="pub.p1.title">
+          Comparative Analysis of the Fitness of Gamma, Log-normal, and Weibull Distributions to Japanese Income Data
+        </h3>
+        <p class="pub-authors">Xinya Li, Akio Suzugawa</p>
+        <p class="pub-venue" data-i18n="pub.p1.venue">Master's Graduation Thesis · Hokkaido University</p>
+        <div class="pub-tags">
+          <span class="tag">Statistical Modelling</span><span class="tag">Income Distribution</span><span class="tag">Japan</span>
+        </div>
+      </div>
+
+      <div class="pub-card reveal">
+        <div class="pub-year">2022</div>
+        <h3 class="pub-title" data-i18n="pub.p2.title">
+          American Sign Language Alphabet Recognition Using Inertial Motion Capture System with Deep Learning
+        </h3>
+        <p class="pub-authors">Yutong Gu, Sherrine, Weiyi Wei, <strong>Xinya Li</strong>, Jianan Yuan, Masahiro Todoh</p>
+        <p class="pub-venue">Hokkaido University</p>
+        <div class="pub-tags">
+          <span class="tag">Deep Learning</span><span class="tag">Motion Capture</span><span class="tag">ASL</span>
+        </div>
+      </div>
+
+      <div class="pub-card reveal">
+        <div class="pub-year">2018</div>
+        <h3 class="pub-title" data-i18n="pub.p3.title">
+          The Mode of Dump Transportation and Its Standardisation during International Trade
+        </h3>
+        <p class="pub-authors">Xinya Li, Yao Liu</p>
+        <p class="pub-venue"><em>Logistics Engineering and Management</em>, ISSN 1674-4993</p>
+        <div class="pub-tags">
+          <span class="tag">Logistics</span><span class="tag">International Trade</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── Travel ─────────────────────────────────────────────── -->
+<section id="travel" class="section section-alt">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.travel">Travel</div>
+    <h2 class="section-title" data-i18n="travel.title">Footprints Across Europe &amp; Asia</h2>
+    <p class="section-intro" data-i18n="travel.intro">
+      Travel has shaped how I see data — every culture frames problems differently, and every city teaches a new way to listen. Here are the places that have shaped me.
+    </p>
+
+    <div class="travel-grid">
+      <div class="travel-card reveal" data-country="cn">
+        <div class="travel-flag">🇨🇳</div>
+        <h3 class="travel-name" data-i18n="travel.cn">China</h3>
+        <p class="travel-note" data-i18n="travel.cn.note">Home · Wuhan, Beijing, Shanghai &amp; beyond</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="jp">
+        <div class="travel-flag">🇯🇵</div>
+        <h3 class="travel-name" data-i18n="travel.jp">Japan</h3>
+        <p class="travel-note" data-i18n="travel.jp.note">Two years in Sapporo · studied across the archipelago</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="se">
+        <div class="travel-flag">🇸🇪</div>
+        <h3 class="travel-name" data-i18n="travel.se">Sweden</h3>
+        <p class="travel-note" data-i18n="travel.se.note">Stockholm exchange · winter in Lapland</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="dk">
+        <div class="travel-flag">🇩🇰</div>
+        <h3 class="travel-name" data-i18n="travel.dk">Denmark</h3>
+        <p class="travel-note" data-i18n="travel.dk.note">Copenhagen · design &amp; hygge</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="cz">
+        <div class="travel-flag">🇨🇿</div>
+        <h3 class="travel-name" data-i18n="travel.cz">Czechia</h3>
+        <p class="travel-note" data-i18n="travel.cz.note">Prague — the city of a hundred spires</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="hu">
+        <div class="travel-flag">🇭🇺</div>
+        <h3 class="travel-name" data-i18n="travel.hu">Hungary</h3>
+        <p class="travel-note" data-i18n="travel.hu.note">Budapest · the pearl of the Danube</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="at">
+        <div class="travel-flag">🇦🇹</div>
+        <h3 class="travel-name" data-i18n="travel.at">Austria</h3>
+        <p class="travel-note" data-i18n="travel.at.note">Vienna · music, museums &amp; Sachertorte</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+
+      <div class="travel-card reveal" data-country="ch">
+        <div class="travel-flag">🇨🇭</div>
+        <h3 class="travel-name" data-i18n="travel.ch">Switzerland</h3>
+        <p class="travel-note" data-i18n="travel.ch.note">Geneva home · weekends in the Alps</p>
+        <div class="travel-placeholder" data-i18n="travel.soon">Photos &amp; stories coming soon</div>
+      </div>
+    </div>
+
+    <div class="travel-map-quote reveal">
+      <span class="quote-mark">"</span>
+      <p data-i18n="travel.quote">
+        Every border crossing is a reminder that data is human first — context is everything.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Life / Personal Gallery ───────────────────────────── -->
+<section id="life" class="section">
+  <div class="container">
+    <div class="section-label" data-i18n="nav.life">Life</div>
+    <h2 class="section-title" data-i18n="life.title">Beyond the Data</h2>
+    <p class="section-intro" data-i18n="life.intro">
+      I'm an outgoing, curious person who finds energy in new places, new people, and new ideas. Outside of work, you'll find me exploring a city, sharing a meal with friends, or planning the next trip.
+    </p>
+
+    <div class="life-grid">
+      <div class="life-tile reveal life-tile-text">
+        <div class="life-icon">☕</div>
+        <h3 data-i18n="life.t1.title">Coffee &amp; Conversations</h3>
+        <p data-i18n="life.t1.desc">A good espresso and an even better chat — my favourite way to learn from people.</p>
+      </div>
+      <div class="life-tile reveal life-tile-photo placeholder-photo">
+        <span data-i18n="life.photo">Photo coming soon</span>
+      </div>
+      <div class="life-tile reveal life-tile-photo placeholder-photo">
+        <span data-i18n="life.photo">Photo coming soon</span>
+      </div>
+      <div class="life-tile reveal life-tile-text">
+        <div class="life-icon">🥾</div>
+        <h3 data-i18n="life.t2.title">Mountains &amp; Trails</h3>
+        <p data-i18n="life.t2.desc">Weekends are often in the Alps — hiking in summer, skiing in winter.</p>
+      </div>
+      <div class="life-tile reveal life-tile-photo placeholder-photo">
+        <span data-i18n="life.photo">Photo coming soon</span>
+      </div>
+      <div class="life-tile reveal life-tile-text">
+        <div class="life-icon">📚</div>
+        <h3 data-i18n="life.t3.title">Languages &amp; Reading</h3>
+        <p data-i18n="life.t3.desc">Currently studying French · reading non-fiction across economics &amp; behavioural science.</p>
+      </div>
+      <div class="life-tile reveal life-tile-photo placeholder-photo">
+        <span data-i18n="life.photo">Photo coming soon</span>
+      </div>
+      <div class="life-tile reveal life-tile-text">
+        <div class="life-icon">🎶</div>
+        <h3 data-i18n="life.t4.title">Music &amp; Cities</h3>
+        <p data-i18n="life.t4.desc">Live music, museum afternoons, and discovering hidden corners of new cities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ────────────────────────────────────────────── -->
+<section id="contact" class="section section-alt">
+  <div class="container contact-container">
+    <div class="section-label" data-i18n="nav.contact">Contact</div>
+    <h2 class="section-title" data-i18n="contact.title">Let's Connect</h2>
+    <p class="contact-sub" data-i18n="contact.sub">
+      Open to full-time Data Scientist or Analytics roles from July 2026. Always happy to discuss data, research, or opportunities in Geneva and beyond.
+    </p>
+    <div class="contact-cards">
+      <a href="mailto:lixinya9807@gmail.com" class="contact-card">
+        <span class="cc-icon">✉</span>
+        <span class="cc-label">Email</span>
+        <span class="cc-value">lixinya9807@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/xinya-li" target="_blank" rel="noopener" class="contact-card">
+        <span class="cc-icon">in</span>
+        <span class="cc-label">LinkedIn</span>
+        <span class="cc-value">linkedin.com/in/xinya-li</span>
+      </a>
+      <a href="https://github.com/Xinya-Li-mylife" target="_blank" rel="noopener" class="contact-card">
+        <span class="cc-icon">⌥</span>
+        <span class="cc-label">GitHub</span>
+        <span class="cc-value">github.com/Xinya-Li-mylife</span>
+      </a>
+      <div class="contact-card no-link">
+        <span class="cc-icon">📍</span>
+        <span class="cc-label" data-i18n="contact.loc">Location</span>
+        <span class="cc-value">1204 Geneva, Switzerland</span>
+      </div>
+    </div>
+    <a href="assets/Xinya_Li_CV.pdf" download class="btn btn-primary btn-lg" data-i18n="contact.dl">Download Full CV</a>
+  </div>
+</section>
+
+<!-- ── Footer ─────────────────────────────────────────────── -->
+<footer>
+  <div class="footer-inner">
+    <span>© 2026 Xinya Li</span>
+    <span data-i18n="footer.made">Crafted with care · Geneva</span>
+  </div>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
