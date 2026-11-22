@@ -350,7 +350,10 @@ ul { list-style: none; }
   line-height: 1.5; margin-bottom: .4rem;
 }
 .pub-authors { font-size: .84rem; color: var(--ink-mid); margin-bottom: .3rem; }
-.pub-venue { font-size: .8rem; color: var(--ink-light); margin-bottom: .7rem; }
+.pub-venue { font-size: .8rem; color: var(--ink-light); margin-bottom: .5rem; }
+.pub-abstract { font-size: .84rem; color: var(--ink-mid); line-height: 1.65; margin-bottom: .6rem; }
+.pub-link { font-size: .8rem; color: var(--peach); text-decoration: none; display: inline-block; margin-bottom: .6rem; }
+.pub-link:hover { text-decoration: underline; }
 .pub-tags { display: flex; flex-wrap: wrap; gap: .4rem; grid-column: 2; }
 
 /* ── Section intro ───────────────────────────────────────── */
